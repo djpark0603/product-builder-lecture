@@ -9,11 +9,21 @@
 <body>
     <div class="container">
         <h1>WEBP to JPG Converter</h1>
-        <input type="file" id="webp-input" accept="image/webp">
-        <button id="convert-btn">Convert to JPG</button>
-        <img id="jpg-output" style="display: none;">
-        <a id="download-link" style="display: none;">Download JPG</a>
+        <div class="input-group">
+            <label for="webp-input">Select Files:</label>
+            <input type="file" id="webp-input" accept="image/webp" multiple>
+        </div>
+        <div class="input-group">
+            <label for="folder-input">Select Folder:</label>
+            <input type="file" id="folder-input" accept="image/webp" webkitdirectory directory>
+        </div>
+        <button id="convert-btn">Convert All to JPG</button>
+        <div id="file-list" class="file-list"></div>
+        <div id="action-buttons" style="display: none;">
+            <button id="download-all-btn">Download All (ZIP)</button>
+        </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
     <script src="main.js"></script>
 </body>
 </html>

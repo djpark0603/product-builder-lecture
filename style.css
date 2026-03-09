@@ -1,62 +1,114 @@
 body {
-    font-family: sans-serif;
-    background-color: #f0f2f5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    margin: 0;
 }
 
 .container {
     background-color: #fff;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     text-align: center;
-    max-width: 500px;
-    width: 100%;
+    width: 90%;
+    max-width: 600px;
 }
 
 h1 {
     color: #333;
+    margin-bottom: 2rem;
+}
+
+.input-group {
     margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #555;
 }
 
 input[type="file"] {
-    display: block;
-    margin: 0 auto 1rem;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fafafa;
 }
 
 button {
     background-color: #007bff;
-    color: #fff;
-    padding: 0.75rem 1.5rem;
+    color: white;
     border: none;
-    border-radius: 4px;
-    cursor: pointer;
+    padding: 12px 24px;
     font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
     transition: background-color 0.3s ease;
+    margin: 10px 0;
+    width: 100%;
 }
 
 button:hover {
     background-color: #0056b3;
 }
 
-#jpg-output {
-    max-width: 100%;
-    margin-top: 1.5rem;
-    border-radius: 4px;
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
 }
 
-#download-link {
-    display: inline-block;
-    margin-top: 1rem;
-    color: #007bff;
-    text-decoration: none;
+.file-list {
+    margin-top: 2rem;
+    max-height: 300px;
+    overflow-y: auto;
+    border-top: 1px solid #eee;
+    padding-top: 1rem;
+    text-align: left;
+}
+
+.file-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #f9f9f9;
+}
+
+.file-name {
+    font-size: 0.9rem;
+    color: #444;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 70%;
+}
+
+.file-status {
+    font-size: 0.8rem;
     font-weight: bold;
 }
 
-#download-link:hover {
-    text-decoration: underline;
+.status-pending { color: #888; }
+.status-converting { color: #007bff; }
+.status-done { color: #28a745; }
+.status-error { color: #dc3545; }
+
+#action-buttons {
+    margin-top: 1rem;
+}
+
+#download-all-btn {
+    background-color: #28a745;
+}
+
+#download-all-btn:hover {
+    background-color: #218838;
 }
