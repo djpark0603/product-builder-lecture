@@ -3,34 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WEBP to JPG Converter</title>
+    <title>WEBP to JPG Converter - High Quality & Free Image Conversion</title>
+    <meta name="description" content="Convert your WEBP images to high-quality JPG format for free. Supports bulk conversion, folder upload, and ZIP download. Safe, fast, and easy to use.">
     <meta name="google-adsense-account" content="ca-pub-5795729129095302">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5795729129095302"
      crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <h1>WEBP to JPG Converter</h1>
-        <div class="input-group">
-            <label for="webp-input">Select Files:</label>
-            <input type="file" id="webp-input" accept="image/webp" multiple>
+    <header class="site-header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="/">WEBP2JPG</a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#converter">Converter</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#privacy">Privacy</a></li>
+                    <li><a href="#terms">Terms</a></li>
+                </ul>
+            </nav>
         </div>
-        <div class="input-group">
-            <label for="folder-input">Select Folder:</label>
-            <input type="file" id="folder-input" accept="image/webp" webkitdirectory directory>
-        </div>
-        <button id="convert-btn">Convert All to JPG</button>
-        <div id="file-list" class="file-list"></div>
-        <div id="action-buttons" style="display: none;">
-            <button id="download-all-btn">Download All (ZIP)</button>
-        </div>
+    </header>
 
-        <hr style="margin: 2rem 0; border: 0; border-top: 1px solid #eee;">
+    <main class="container">
+        <section id="converter" class="converter-section">
+            <div class="hero">
+                <h1>WEBP to JPG Converter</h1>
+                <p>Convert your WEBP files to high-quality JPG format instantly. Safe, secure, and entirely in your browser.</p>
+            </div>
+            
+            <div class="tool-box">
+                <div class="input-group">
+                    <label for="webp-input" class="custom-file-upload">
+                        <span>Select Individual Files</span>
+                        <input type="file" id="webp-input" accept="image/webp" multiple>
+                    </label>
+                </div>
+                <div class="input-group">
+                    <label for="folder-input" class="custom-file-upload">
+                        <span>Select Entire Folder</span>
+                        <input type="file" id="folder-input" accept="image/webp" webkitdirectory directory>
+                    </label>
+                </div>
+                <button id="convert-btn" class="primary-btn">Convert All to JPG</button>
+                <div id="file-list" class="file-list"></div>
+                <div id="action-buttons" style="display: none;">
+                    <button id="download-all-btn" class="secondary-btn">Download All (ZIP)</button>
+                </div>
+            </div>
+        </section>
 
-        <div class="affiliate-section">
-            <h2>Affiliate Inquiry</h2>
-            <form action="https://formspree.io/f/xjgagarg" method="POST">
+        <section id="how-it-works" class="content-section">
+            <h2>How to Convert WEBP to JPG?</h2>
+            <ol class="steps">
+                <li><strong>Select Files:</strong> Click "Select Individual Files" or "Select Entire Folder" to upload your WEBP images.</li>
+                <li><strong>Convert:</strong> Click the "Convert All to JPG" button to start the transformation process.</li>
+                <li><strong>Download:</strong> Once finished, you can download each image individually or get them all in a single ZIP file.</li>
+            </ol>
+        </section>
+
+        <section id="about" class="content-section">
+            <h2>About WEBP2JPG</h2>
+            <p>Our WEBP to JPG converter is designed with speed and privacy in mind. Unlike other online converters, our tool processes all images locally in your browser. This means your sensitive data never leaves your computer, providing the ultimate level of security.</p>
+            <p>WEBP is a modern image format that provides superior lossless and lossy compression for images on the web. However, it's not always supported by all devices and software. Our tool helps you bridge that gap by converting WEBP to the widely-supported JPG format without sacrificing quality.</p>
+        </section>
+
+        <section id="faq" class="content-section">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h3>Is it free to use?</h3>
+                <p>Yes, our converter is completely free to use for any number of files.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Is my data safe?</h3>
+                <p>Absolutely. The conversion happens entirely within your web browser. We do not upload your images to any server.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Does it support bulk conversion?</h3>
+                <p>Yes, you can select multiple files or even an entire folder for batch conversion.</p>
+            </div>
+        </section>
+
+        <hr class="section-divider">
+
+        <section id="affiliate" class="affiliate-section">
+            <h2>Business & Affiliate Inquiry</h2>
+            <p>Interested in collaborating or have a business proposal? Reach out to us using the form below.</p>
+            <form action="https://formspree.io/f/xjgagarg" method="POST" class="contact-form">
                 <div class="input-group">
                     <label for="full-name">Name</label>
                     <input type="text" id="full-name" name="name" required placeholder="Your Name">
@@ -43,32 +108,50 @@
                     <label for="message">Message</label>
                     <textarea id="message" name="message" required placeholder="Tell us about your proposal..." rows="4"></textarea>
                 </div>
-                <button type="submit">Submit Inquiry</button>
+                <button type="submit" class="submit-btn">Submit Inquiry</button>
             </form>
+        </section>
+
+        <hr class="section-divider">
+
+        <section id="privacy" class="content-section">
+            <h2>Privacy Policy</h2>
+            <p>At WEBP2JPG, we take your privacy seriously. This privacy policy document outlines the types of personal information that is received and collected by WEBP2JPG and how it is used.</p>
+            <h3>Log Files</h3>
+            <p>Like many other websites, WEBP2JPG makes use of log files. The information inside the log files includes internet protocol (IP) addresses, type of browser, Internet Service Provider (ISP), date/time stamp, referring/exit pages, and number of clicks to analyze trends, administer the site, track user’s movement around the site, and gather demographic information.</p>
+            <h3>Cookies and Web Beacons</h3>
+            <p>WEBP2JPG does use cookies to store information about visitors' preferences, to record user-specific information on which pages the site visitor accesses or visits, and to personalize or customize our web page content based upon visitors' browser type or other information that the visitor sends via their browser.</p>
+            <h3>Google AdSense</h3>
+            <p>Google, as a third-party vendor, uses cookies to serve ads on our site. Google's use of the DART cookie enables it to serve ads to users based on their visit to our site and other sites on the Internet. Users may opt out of the use of the DART cookie by visiting the Google ad and content network privacy policy.</p>
+        </section>
+
+        <section id="terms" class="content-section">
+            <h2>Terms of Service</h2>
+            <p>By accessing the website at WEBP2JPG, you are agreeing to be bound by these terms of service, all applicable laws and regulations, and agree that you are responsible for compliance with any applicable local laws.</p>
+            <p>The materials on WEBP2JPG's website are provided on an 'as is' basis. WEBP2JPG makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.</p>
+        </section>
+
+        <section id="comments" class="comments-section">
+            <h2>Community Discussion</h2>
+            <div id="disqus_thread"></div>
+            <script>
+                (function() {
+                var d = document, s = d.createElement('script');
+                s.src = 'https://productbuilder-xhr5dgnuza.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <p>&copy; 2026 WEBP2JPG. All rights reserved.</p>
         </div>
+    </footer>
 
-        <hr style="margin: 2rem 0; border: 0; border-top: 1px solid #eee;">
-
-        <div id="disqus_thread"></div>
-        <script>
-            /**
-            *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-            *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-            /*
-            var disqus_config = function () {
-            this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-            this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-            };
-            */
-            (function() { // DON'T EDIT BELOW THIS LINE
-            var d = document, s = d.createElement('script');
-            s.src = 'https://productbuilder-xhr5dgnuza.disqus.com/embed.js';
-            s.setAttribute('data-timestamp', +new Date());
-            (d.head || d.body).appendChild(s);
-            })();
-        </script>
-        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
     <script src="main.js"></script>
 </body>
