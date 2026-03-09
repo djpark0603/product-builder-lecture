@@ -132,3 +132,8 @@ button:disabled {
 #download-all-btn:hover {
     background-color: #218838;
 }
+
+#disqus_thread {
+    margin-top: 2rem;
+    text-align: left;
+}
